@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./fonts/Rubik-VariableFont_wght.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* style.css */
+html {
+    background-color: rgb(255, 255, 255);;
+  }
+
+/* Body Styles */
+body {
+    font-family: 'CustomFont', sans-serif;
+    font-size: 16px;
+    margin: 1em auto;
+    min-height: calc(100vh - 2rem);
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #f5f5f5;
+}
+/* CSS styles for header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+/* CSS styles for cube container */
+#cube-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    perspective: 1000px; /* Define the perspective for 3D rendering */
+}
+
+/* CSS styles for cube */
+#cube {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: spin 2s linear infinite;
+    transform-style: preserve-3d;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.text-container {
+    flex: 1 1 auto;
+}
+
+/* Header Styles */
+header {
+    --left_pad: 20px;
+    background-color: #000000; /* Dark gray background color */
+}
+
+header img {
+    width: 100px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h1.title {
+    color: #ffffff;
+    padding-left: var(--left_pad);
+}
+
+p.description{
+    color: #ffffff;
+    font-size: medium;
+    padding-left: var(--left_pad);
+}
+
+/* Navigation Styles */
+nav {
+    padding: 10px;
+    padding-left: 20px;
+    background-color: #74a0ff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Add margin between navigation links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White text color for navigation links */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Change text color on hover */
+}
+
+section{
+    --left_pad: 20px;
+    padding-left: var(--left_pad);
+}
+
+footer{
+    --left_pad: 20px;
+    padding-left: var(--left_pad);
+}
