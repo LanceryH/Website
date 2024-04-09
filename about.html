@@ -1,36 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- You can add additional meta tags, CSS files, or JavaScript files here -->
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ItsME</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/libraries/p5.min.js"></script>
+  </head>
+  <body>
     <header>
+      <div>
         <h1 class="title">Hugo Lancery</h1>
-        <p class="description">Aerospace Engineer specialized in propulsion and space mechanics</p>
-
+        <p class="description">
+          Aerospace Engineer specialized in propulsion and space mechanics
+        </p>
+      </div>
+      <div id="cube-container">
+        <div id="cube"></div>
+      </div>
     </header>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <!-- Add additional navigation buttons here -->
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
     <main>
-
+      <section id="about">
+        <h2>Who am I ?</h2>
+        <p>
+          I am passionate about aerospace engineering and dedicated to solving
+          challenges in propulsion and space mechanics.
+        </p>
+        <p>
+          My journey started 10 years ago when I discovered my love for space. I
+          started reading and watching anything I could in my range of the
+          understandable.
+        </p>
+        <p>
+          This passion led me to choose an engineering school specialized in
+          space and aeronautics, wich gave me all the tool I would need. I
+          arrived at Toulouse in France wich is the capital of the aerospace
+          sector. I discovered new things wich I loved such as applied
+          mathematics and physics simulation. I learnt in consequences python
+          and C++ to begin with, and I did multiple projects where I applied my
+          courses with python.
+        </p>
+        <a
+          href="https://github.com/LanceryH/Machine-Learning-and-mathematical-resolution"
+          >Link to projects</a
+        >
+        <p>
+          I applied to get my option "Space Launcher and Satellite" and I got
+          courses in space mechanics and advanced propulsion. I try to combine
+          both the knowledge and skills with code and now I am frequently
+          working on my free time on interesting projects. I now am trying to
+          learn and use new way of doing what I like with new methods like web
+          developpement, gthub, Linux and many more...
+        </p>
+        <a href="https://github.com/LanceryH/satvision">Link to projects</a>
+      </section>
     </main>
-
     <footer>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
+      <p>&copy; 2024 Your Website. All rights reserved.</p>
     </footer>
-
-    <!-- You can include JavaScript files at the end of the body for better performance -->
-    <script src="js/script.js"></script>
-</body>
+    <script src="./js/mover.js"></script>
+    <script src="./js/sketch.js"></script>
+    <script src="./js/quadtree.js"></script>
+  </body>
 </html>
