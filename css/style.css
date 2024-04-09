@@ -33,10 +33,10 @@ header {
 
 /* CSS styles for cube container */
 #cube-container {
-  width: 110px;
+  width: 100px;
   height: 100px;
   position: relative;
-  perspective: 1000px; /* Define the perspective for 3D rendering */
+  overflow: auto;
 }
 
 /* CSS styles for cube */
