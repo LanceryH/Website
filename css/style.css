@@ -7,7 +7,7 @@
 
 /* style.css */
 html {
-  background-color: rgb(255, 255, 255);
+  background-color: #f5f5f5;
 }
 
 /* Body Styles */
@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 /* CSS styles for header */
 header {
@@ -65,7 +65,7 @@ header {
 
 /* Header Styles */
 header {
-  --left_pad: 20px;
+  --pad: 20px;
   background-color: #000000; /* Dark gray background color */
 }
 
@@ -76,13 +76,16 @@ header img {
 
 h1.title {
   color: #ffffff;
-  padding-left: var(--left_pad);
+  padding-left: var(--pad);
+  padding-right: var(--pad);
 }
 
 p.description {
   color: #ffffff;
   font-size: medium;
-  padding-left: var(--left_pad);
+  padding-left: var(--pad);
+  padding-right: var(--pad);
+
 }
 
 /* Navigation Styles */
@@ -113,12 +116,20 @@ nav ul li a:hover {
   color: #ffd700; /* Change text color on hover */
 }
 
+img {
+  width: 100%; /* takes the 100 % width of its container (.box div)*/
+  height: 100%; /* takes the 100 % height of its container (.box div)*/
+  max-height: 20vw;
+}
+
 section {
-  --left_pad: 20px;
-  padding-left: var(--left_pad);
+  --pad: 20px;
+  padding-left: var(--pad);
+  padding-right: var(--pad);
 }
 
 footer {
-  --left_pad: 20px;
-  padding-left: var(--left_pad);
+  --pad: 20px;
+  padding-left: var(--pad);
+  padding-right: var(--pad);
 }
